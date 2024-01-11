@@ -1,0 +1,179 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#app {
+    height: 700px;
+    width: 1300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    color: #333;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.coefficients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coefficients-container input {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.coefficients-container label {
+    margin-right: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.start-button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #2980b9;
+}
+
+.output-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.output-table th, .output-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.output-table th {
+    background-color: #ecf0f1;
+}
+
+select, input {
+    padding: 8px;
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    border-color: #3498db;
+}
+
+#output-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#output-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#output-container th, #output-container td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+#output-container th {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+#output-container tr:hover {
+    background-color: #ecf0f1;
+}
+
+#isMatricielle {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 5px;
+}
+
+#isMatricielle:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+#isMatricielle::-webkit-check-mark,
+#isMatricielle::-moz-check-mark,
+#isMatricielle::-ms-check {
+    display: none;
+}
+
+#app::-webkit-scrollbar {
+    width: 12px;
+}
+
+#app::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 6px;
+}
+
+#app::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+#app {
+    scrollbar-width: thin;
+    scrollbar-color: #3498db #fff;
+}
+
+#app {
+    -ms-overflow-style: none;
+}
+
+#app:hover::-webkit-scrollbar-thumb {
+    background-color: #2980b9;
+}
